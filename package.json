@@ -18,6 +18,8 @@
     "deploy": "gh-pages -d dist",
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --open",
+    "build-css": "sass style.scss style.css",
+    "watch-css": "sass --watch style.scss:style.css",
     "watch": "webpack --mode development --watch"
   },
   "browserslist": [
