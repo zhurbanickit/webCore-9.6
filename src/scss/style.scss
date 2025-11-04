@@ -2,16 +2,81 @@ $bgColor: #24292e;
 $text: #fff;
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'TT Lakes';
+  src: url('/src/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: italic;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('/src/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('/src/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@use 'sass:color';
+
+//variables
+$background-color: #f8f8f8;
+$gradientgrid-color: #ffffff;
+$maintext-color: #1b1c21;
+$bordericongrid-color: #eaeaea;
+$anothertext-color: #7e7e82;
+$pagination-color: #dddddd;
+$twopagination-color: #b5b6bc;
+$servicesborder-color: #41f6d7;
+$servicesbutton-color: #b8ffec;
+$titlesborder-color: #d9fff5;
+
+//mixins
+@mixin servicesbutton-style {
+  height: 40px;
+  color: $anothertext-color;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  font-weight: 500;
+}
+
+@mixin brandbutton-style {
+  height: 72px;
+  width: 240px;
+  justify-content: space-around;
+  padding: 12px;
+  border: 1px solid $bordericongrid-color;
+  border-color: $gradientgrid-color;
+  border-radius: 5px;
+}
+
+@mixin skipbutton-style {
+  padding: 4px;
+  border: none;
+  font-weight: 500;
+  color: $maintext-color;
+  background-color: $background-color;
+  margin-bottom: 50px;
+}
+
+@mixin typesbutton-style {
+  height: 160px;
+  width: 240px;
+  padding: 12px;
+  font-weight: 500;
+  border: 1px solid $bordericongrid-color;
+  border-color: $gradientgrid-color;
+  border-radius: 5px;
+}
+
+@mixin buttoms-style {
+  font-weight: 500;
+  color: $anothertext-color;
+  border: none;
 }
