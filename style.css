@@ -24,7 +24,52 @@ body {
 
 .slider {
   width: 320px;
-  width: 320px;
+  box-shadow: 10px 0px 35px 0px rgba(0, 0, 0, 0.2);
+}
+.slider_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.slider_left {
+  display: flex;
+  float: left;
+}
+.slider_right {
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+  margin-right: 24px;
+}
+.slider_right_button, .slider_left_button {
+  margin-top: 20px;
+  padding: 0;
+}
+.slider_services {
+  display: flex;
+  flex-direction: column;
+  width: 222px;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  line-height: 24px;
+}
+.slider_services_div {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0 0 24px;
+  font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.slider_services_first_services_first {
+  margin: 30px 0 0 0;
+  padding: 4px 30px 4px 26px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  color: #7e7e82;
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
