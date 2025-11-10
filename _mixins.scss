@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use 'sass:color' as *;
+
+@mixin servicesbutton-style {
+  height: 40px;
+  color: $anothertext-color;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  font-weight: 500;
+}
+
+@mixin brandbutton-style {
+  height: 72px;
+  width: 240px;
+  justify-content: space-around;
+  padding: 12px;
+  border: 1px solid $bordericongrid-color;
+  border-color: $gradientgrid-color;
+  border-radius: 5px;
+}
+
+@mixin skipbutton-style {
+  padding: 4px;
+  border: none;
+  font-weight: 500;
+  color: $maintext-color;
+  background-color: $background-color;
+  margin-bottom: 50px;
+}
+
+@mixin typesbutton-style {
+  height: 160px;
+  width: 240px;
+  padding: 12px;
+  font-weight: 500;
+  border: 1px solid $bordericongrid-color;
+  border-color: $gradientgrid-color;
+  border-radius: 5px;
+}
+
+@mixin buttoms-style {
+  font-weight: 500;
+  color: $anothertext-color;
+  border: none;
+}

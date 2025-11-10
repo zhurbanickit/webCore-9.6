@@ -20,6 +20,7 @@
     "start": "webpack serve --mode development --open",
     "build-css": "sass style.scss style.css",
     "watch-css": "sass --watch style.scss:style.css",
+    "dev": "concurrently \"npm run watch-css\"",
     "watch": "webpack --mode development --watch"
   },
   "browserslist": [
