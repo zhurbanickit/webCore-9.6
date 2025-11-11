@@ -48,9 +48,9 @@ body {
     font-weight: 500;
     font-size: 14px;
   }
-  &_services_first {
-    &_services_first {
-      margin: 30px 0 0 0;
+ 
+  &_services_divA {
+margin: 30px 0 0 0;
       padding: 4px 30px 4px 26px;
       border-left: 4px solid variables.$bordericongrid-color;
       border-top: none;
@@ -58,6 +58,82 @@ body {
       border-bottom: none;
       color: variables.$anothertext-color;
       background: variables.$gradientgrid_color;
-    }
   }
+  &_buttom{
+    display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-top: 200px;
+  font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  top: 74vh;
+  }
+&_buttom_first{
+  font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+&_buttom_last_button{
+   font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1b1c21;
+}
+&_services_div,
+&_buttom_icons,
+&_buttom_last_button,
+&_buttom_second,
+&_icons_parth,
+&_left_button,
+&_right_button
+{
+ border: none;
+  background: #ffffff;
+}
+&_services_div,
+&_buttom_icons,
+&_buttom_last_button,
+&_buttom_second,
+&_icons_parth,
+&_left_button,
+&_right_button,
+&_services_divA
+{
+ transition: all 0.2s ease;
+}
+&_services_div:hover,
+&_buttom_icons:hover,
+&_buttom_last_button:hover,
+&_buttom_second:hover,
+&_icons_parth:hover,
+&_left_button:hover,
+&_right_button:hover,
+&_services_divA:hover,
+&_buttom_first:hover
+{
+cursor: pointer;
+
+  text-decoration: underline #ff3e79;
+
+  transform: scale(1.1);
+}
+&_buttom_last_button
+{
+font-family: "TT Lakes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.ru{
+  color: #7e7e82;
+}
 }
