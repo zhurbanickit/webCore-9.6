@@ -246,4 +246,90 @@ body {
   display: none;
 }
 
+.repair {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+.repair_brands_container, .repair_types_main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.repair_brands_container_hidden, .repair_types_main_hidden {
+  display: none;
+  flex-wrap: wrap;
+}
+.repair_brands_container_parth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: #eaeaea 1px solid;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 40px;
+  width: 208px;
+  padding: 16px;
+}
+.repair_types_main_parth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: #eaeaea 1px solid;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 128px;
+  width: 208px;
+  padding: 16px;
+}
+.repair_brands_container_parth_hidden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: #eaeaea 1px solid;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 40px;
+  width: 208px;
+  padding: 16px;
+}
+.repair_types_main_parth_hidden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: #eaeaea 1px solid;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 128px;
+  width: 208px;
+  padding: 16px;
+}
+.repair_brands_swiper_pagination-active, .repair_types_swiper_pagination-active {
+  background: #b5b6bc;
+}
+.repair_brands_swiper_pagination, .repair_types_swiper_pagination {
+  background: #dddddd;
+}
+.repair_brands_buttons, .repair_types_buttons {
+  padding-bottom: 30px;
+}
+.repair_brands_button, .repair_types_button {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #1b1c21;
+  background: #f8f8f8;
+  border: none;
+  /* margin-bottom: 50px; */
+  margin-left: 24px;
+}
+.repair_brands_button_hidden, .repair_types_button_hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

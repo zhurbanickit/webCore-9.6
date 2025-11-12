@@ -170,6 +170,7 @@ font-family: "TT Lakes";
 .nav_menu{
   display:none;
 }
+
 .services {
  background-color: variables.$background-color;
 
@@ -289,4 +290,118 @@ float: right;
 }
 
 
+}
+
+.repair {
+  background-color: variables.$background-color;
+  width: 100%;
+
+&_brands_container,
+&_types_main
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+&_brands_container_hidden,
+&_types_main_hidden
+{
+ display: none;
+  flex-wrap: wrap;
+}
+
+  &_brands_container_parth
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+  }
+
+&_types_main_parth {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 128px;
+    width: 208px;
+    padding: 16px;
+}
+
+  &_brands_container_parth_hidden
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+  }
+
+  &_types_main_parth_hidden {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 128px;
+    width: 208px;
+    padding: 16px;
+  }
+
+  &_brands_swiper_pagination-active,
+  &_types_swiper_pagination-active
+   {
+    background: variables.$twopagination-color;
+  }
+
+  &_brands_swiper_pagination,
+  &_types_swiper_pagination 
+  {
+    background: variables.$pagination-color;
+}
+
+
+&_brands_buttons,
+&_types_buttons {
+  padding-bottom: 30px;
+}
+
+
+&_brands_button,
+&_types_button
+{
+font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: variables.$maintext-color;
+  background: variables.$background-color;
+  border: none;
+  /* margin-bottom: 50px; */
+  margin-left: 24px;
+}
+
+&_brands_button_hidden,
+&_types_button_hidden 
+{
+  display:none;
+}
 }
