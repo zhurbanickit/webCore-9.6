@@ -405,3 +405,109 @@ font-family: "TT Lakes";
   display:none;
 }
 }
+
+.prices{
+  background-color: variables.$background-color;
+font-family: 'TT Lakes';
+&_main {
+  margin:24px;
+}
+
+
+  &_main_up{
+    display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+    
+  }
+
+  &_main_about{
+    background-color:variables.$gradientgrid-color;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 40px);
+  padding: 10px;
+  border-radius: 10px;
+  
+  }
+
+&_about{
+  border-bottom: 2px variables.$bordericongrid-color solid;
+  // border-top: 5px variables.$gradientgrid-color solid;
+}  
+
+  &_button {
+    border: none;
+    background-color: variables.$pricesbutton-color;
+    color: variables.$gradientgrid-color ;
+    border-radius: 15px;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 6px;
+    font-family: 'TT Lakes';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+height: 32px;
+width: 119px;
+
+  }
+}
+
+.commercial {
+background-color: variables.$background-color ;
+
+  &_proposal {
+    font-weight: 400;
+    font-size: 14px;
+    color: variables.$maintext-color;
+    width: 421px;
+    height: 60px;
+    margin: 16px 24px;
+  }
+
+  &_button{
+    font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  color: variables.$maintext-color;
+  background: variables.$background-color;
+  border: none;
+  /* margin-bottom: 50px; */
+  margin-left: 24px;
+  }
+}
+
+.buttoms {
+  display: flex;
+  justify-content: space-between;
+  background-color: variables.$background-color;
+  margin : 24px;
+&_left {
+  display: flex;
+  justify-content: start;
+  width: 218px;
+  height: 32px;
+  font-size: 14px;
+}
+&_center {
+  display: flex;
+  justify-content: center;
+   width: 214px;
+  height: 16px;
+  font-size: 14px;
+}
+&_right {
+  display: flex;
+  justify-content: flex-end;
+   width: 213px;
+  height: 48px;
+  font-size: 14px;
+}
+}
