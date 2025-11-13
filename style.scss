@@ -301,13 +301,19 @@ font-family: "TT Lakes";
 }
 
 &_main_button_visible{
-   display: flex;
-  justify-content: center;
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  border: none;
+  color: variables.$maintext-color;
   background: variables.$background-color;
-  margin: 0 0 10px 5px;
-  padding: 10px;
+  border: none;
+  /* margin-bottom: 50px; */
+  // margin-left: 24px;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -318,15 +324,17 @@ font-family: "TT Lakes";
 &_main_poster{
    display: flex;
     float: right;
-    border-radius: 6px;
-
-    width: 531px;
-    height: 307px;
+    height: auto;
     /* width: 44%; */
     margin: 0 16px 30px 16px;
     /* overflow: hidden; */
 }
+&_main_img{
+border-radius: 6px;
 
+    width: 531px;
+    height: 307px;
+}
 }
 
 .repair {
@@ -465,7 +473,7 @@ font-family: "TT Lakes";
   background-color: variables.$background-color;
 font-family: 'TT Lakes';
 &_main {
-  margin:24px;
+  margin:0 24px 24px 24px;
 }
 
 
@@ -521,6 +529,7 @@ background-color: variables.$background-color ;
     width: 421px;
     height: 60px;
     margin: 16px 24px;
+    padding-top: 24px;
   }
 
   &_button{
@@ -536,6 +545,7 @@ background-color: variables.$background-color ;
   border: none;
   /* margin-bottom: 50px; */
   margin-left: 24px;
+  padding-bottom: 47px;
   }
 }
 
@@ -545,9 +555,11 @@ background-color: variables.$background-color ;
   background-color: variables.$background-color;
   padding : 24px;
   border-top: 1px variables.$titlesborder-color solid;
+  color: variables.$anothertext-color;
 &_left {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+flex-direction: column;
   width: 218px;
   height: 32px;
   font-size: 14px;
@@ -562,8 +574,10 @@ background-color: variables.$background-color ;
 &_right {
   display: flex;
   justify-content: flex-end;
-   width: 213px;
-  height: 48px;
+  align-items: flex-end;
+  flex-direction: column;
+   max-width: 330px;
+  min-height: 32px;
   font-size: 14px;
 }
 }

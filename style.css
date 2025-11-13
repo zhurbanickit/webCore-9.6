@@ -244,13 +244,18 @@ body {
   display: none;
 }
 .services_main_button_visible {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  border: none;
+  color: #1b1c21;
   background: #f8f8f8;
-  margin: 0 0 10px 5px;
-  padding: 10px;
+  border: none;
+  /* margin-bottom: 50px; */
+  padding: 0;
   cursor: pointer;
 }
 .services_main_button_hidden {
@@ -259,12 +264,15 @@ body {
 .services_main_poster {
   display: flex;
   float: right;
-  border-radius: 6px;
-  width: 531px;
-  height: 307px;
+  height: auto;
   /* width: 44%; */
   margin: 0 16px 30px 16px;
   /* overflow: hidden; */
+}
+.services_main_img {
+  border-radius: 6px;
+  width: 531px;
+  height: 307px;
 }
 
 .repair {
@@ -369,7 +377,7 @@ body {
   font-family: "TT Lakes";
 }
 .prices_main {
-  margin: 24px;
+  margin: 0 24px 24px 24px;
 }
 .prices_main_up {
   display: grid;
@@ -413,6 +421,7 @@ body {
   width: 421px;
   height: 60px;
   margin: 16px 24px;
+  padding-top: 24px;
 }
 .commercial_button {
   font-family: "TT Lakes";
@@ -427,6 +436,7 @@ body {
   border: none;
   /* margin-bottom: 50px; */
   margin-left: 24px;
+  padding-bottom: 47px;
 }
 
 .buttoms {
@@ -435,10 +445,12 @@ body {
   background-color: #f8f8f8;
   padding: 24px;
   border-top: 1px #d9fff5 solid;
+  color: #7e7e82;
 }
 .buttoms_left {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 218px;
   height: 32px;
   font-size: 14px;
@@ -453,8 +465,10 @@ body {
 .buttoms_right {
   display: flex;
   justify-content: flex-end;
-  width: 213px;
-  height: 48px;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 330px;
+  min-height: 32px;
   font-size: 14px;
 }
 
