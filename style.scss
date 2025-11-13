@@ -184,9 +184,10 @@ font-family: "TT Lakes";
 
 &_right {
 
-display: flex;
-flex-direction: row;
+
+// flex-direction: row;
 float: right;
+display: inline;
 }
 
 &_labels{
@@ -212,7 +213,8 @@ float: right;
 }
 
 &_nav{
-    display: flex;
+    display: inline;
+   
   /* gap: 10px; */
   margin: 20px 20px 0 16px;
   padding: 3px;
@@ -220,11 +222,20 @@ float: right;
   justify-content: flex-start;
   align-items: center;
 
+  // overflow-x: auto;
+  // scrollbar-width: none; 
+}
+&_nav_up{
+  display: flex;
+  flex-direction: row;
   overflow-x: auto;
-  scrollbar-width: none; 
+  flex-wrap: nowrap;
+  scrollbar-width: none;
 }
 
-&_nav_up_button{
+
+&_nav_up_button,
+&_down_button_reviews{
   display: flex;
   text-wrap: nowrap;
   color:  variables.$anothertext-color;
@@ -237,32 +248,47 @@ float: right;
   font-weight: 500;
   /* width: 246px; */
   height: 40px;
-  padding: 5px 5px 5px 12px;
+  padding: 5px  12px;
   cursor: pointer;
   width: auto;
 }
 
-&_nav_up_button:hover{
+&_nav_up_button:hover,
+&_down_button_reviews:hover{
    background-color: variables.$gradientgrid-color;
   border: variables.$servicesbutton-color 2px solid;
   border-radius: 6px;
 }
 
-&_down_button_reviews{
-  margin: 16px;
-  padding: 0 0 0 16px;
-  // display: none;
-}
+// &_down_button_reviews{
+//   margin: 16px;
+//   padding: 0 0 0 16px;
+//   // display: none;
+// }
 
 &_main{
   background-color: variables.$background-color;
-  max-width: 100%;
   display: flex;
+  max-width: 100%;
+
+  
+  justify-content: space-between;
   flex-direction: row;
 }
 
 &_main_about{
-   font-family: "TT Lakes";
+    display: flex;
+    float: left;
+    max-width: 506px;
+    height: auto;
+    justify-content: flex-start;
+    align-items: column;
+    flex-wrap: wrap;
+    margin-left: 24px;
+}
+
+&_main_title{
+font-family: "TT Lakes";
   font-size: 14px;
   font-weight: 400;
   color: variables.$maintext-color;
@@ -289,6 +315,17 @@ float: right;
   display:none;
 }
 
+&_main_poster{
+   display: flex;
+    float: right;
+    border-radius: 6px;
+
+    width: 531px;
+    height: 307px;
+    /* width: 44%; */
+    margin: 0 16px 30px 16px;
+    /* overflow: hidden; */
+}
 
 }
 
@@ -406,6 +443,24 @@ font-family: "TT Lakes";
 }
 }
 
+.titles {
+  
+  
+  border-top: 1px variables.$titlesborder-color solid;
+  // height: 56px;
+  background:linear-gradient(45deg,variables.$background-color,variables.$gradientgrid-color) ;
+  color:variables.$anothertext-color;
+  // margin: 16px;
+  font-size: 16px;
+  padding:  16px 24px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+
+}
+
 .prices{
   background-color: variables.$background-color;
 font-family: 'TT Lakes';
@@ -488,7 +543,8 @@ background-color: variables.$background-color ;
   display: flex;
   justify-content: space-between;
   background-color: variables.$background-color;
-  margin : 24px;
+  padding : 24px;
+  border-top: 1px variables.$titlesborder-color solid;
 &_left {
   display: flex;
   justify-content: start;
