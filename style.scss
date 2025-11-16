@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   font-family: 'TT Lakes';
   font-size: 16px;
+  background-color: variables.$background-color;
 }
 
 .slider {
@@ -184,11 +185,17 @@ font-family: "TT Lakes";
 
 &_right {
 
-
-// flex-direction: row;
 float: right;
-display: inline;
+//  justify-content: flex-end;
 }
+
+&_right_buttons{
+  
+  display: flex;
+ justify-content: flex-end;
+}
+
+
 
 &_labels{
   border:none;
@@ -196,8 +203,23 @@ display: inline;
    display: flex;
     // justify-content: center;
     align-items: center;
+    text-wrap: nowrap ;
     margin-right: 16px;
+    margin: 30px 16px 0 0;
+    width: 168px;
+    height: 40;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-weight: 500;
+    color: variables.$maintext-color;
+    cursor: pointer;
+
 }
+&_right_img{
+  padding-left:5px;
+}
+
+
 
  &_left_main {
   margin: 30px 42px 0 0;
@@ -231,6 +253,11 @@ display: inline;
   overflow-x: auto;
   flex-wrap: nowrap;
   scrollbar-width: none;
+  margin: 0 16px;
+}
+
+&_nav_down{
+  margin: 0 16px;
 }
 
 
@@ -254,7 +281,10 @@ display: inline;
 }
 
 &_nav_up_button:hover,
-&_down_button_reviews:hover{
+&_down_button_reviews:hover,
+&_nav_up_button:active,
+&_down_button_reviews:active
+{
    background-color: variables.$gradientgrid-color;
   border: variables.$servicesbutton-color 2px solid;
   border-radius: 6px;
@@ -287,7 +317,7 @@ display: inline;
     margin-left: 24px;
 }
 
-&_main_title{
+&_main_title_one{
 font-family: "TT Lakes";
   font-size: 14px;
   font-weight: 400;
@@ -296,9 +326,17 @@ font-family: "TT Lakes";
   letter-spacing: 0.2px;
 }
 
-&_main_title_hiden{
+&_main_title_onex{
+  margin-top: 14px;
+}
+
+&_main_title_hiden,
+&_main_title_two
+{
   display:none;
 }
+
+
 
 &_main_button_visible{
   font-family: "TT Lakes";
@@ -346,6 +384,7 @@ border-radius: 6px;
 {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1320px;
 }
 
 &_brands_container_hidden,
@@ -367,6 +406,7 @@ border-radius: 6px;
     height: 40px;
     width: 208px;
     padding: 16px;
+    cursor: pointer;
   }
 
 &_types_main_parth {
@@ -380,6 +420,7 @@ border-radius: 6px;
     height: 128px;
     width: 208px;
     padding: 16px;
+    cursor: pointer;
 }
 
   &_brands_container_parth_hidden
@@ -425,6 +466,8 @@ border-radius: 6px;
 &_brands_buttons,
 &_types_buttons {
   padding-bottom: 30px;
+  cursor: pointer;
+  width: 200px;
 }
 
 
@@ -474,6 +517,7 @@ font-family: "TT Lakes";
 font-family: 'TT Lakes';
 &_main {
   margin:0 24px 24px 24px;
+  font-size: 14px;
 }
 
 
@@ -481,6 +525,10 @@ font-family: 'TT Lakes';
     display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
     
+  }
+  &_main_up_path{
+    color: variables.$anothertext-color;
+    padding: 10px;
   }
 
   &_main_about{
@@ -513,8 +561,9 @@ font-family: 'TT Lakes';
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.15px;
-height: 32px;
-width: 119px;
+    height: 32px;
+    width: 119px;
+    cursor: pointer;
 
   }
 }
@@ -529,7 +578,7 @@ background-color: variables.$background-color ;
     width: 421px;
     height: 60px;
     margin: 16px 24px;
-    padding-top: 24px;
+    // padding-top: 24px;
   }
 
   &_button{
@@ -546,6 +595,7 @@ background-color: variables.$background-color ;
   /* margin-bottom: 50px; */
   margin-left: 24px;
   padding-bottom: 47px;
+  cursor: pointer;
   }
 }
 
@@ -580,4 +630,78 @@ flex-direction: column;
   min-height: 32px;
   font-size: 14px;
 }
+&_right_divz{
+  display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+
+
+.services{
+&_nav_down{
+  display: none;
+}
+&_right{
+  display: none;
+}
+&_nav_up_button_hidden{
+  display: none;
+}
+&_main_img{
+
+    width: 306px;
+    height: 208px;
+}
+&_main_title_one{
+  display: none;
+}
+&_main_title_two{
+  display: flex;
+  flex-direction: column;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-weight: 400;
+  color: variables.$maintext-color;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  
+}
+&_main_title_twox{
+  display: flex;
+  margin-top: 14px;
+}
+}
+
+.repair{
+  &_types_main_parth_hidden,
+  &_brands_container_parth_hidden{
+    display: none;
+  }
+   &_brands_container_parth
+  {
+    width: 192px;
+   }
+
+  &_types_main_parth {
+    width: 192px;
+    
+}
+}
+.buttoms{
+  &_right_div{
+    display: none;
+  }
+  &_right_divz{
+     display: flex;
+  // justify-content: flex-end;
+  align-items: flex-end;
+   width: 213px;
+  // height: 48px;
+  font-size: 14px;
+  letter-spacing: 0;
+
+  }
+}
+
 }

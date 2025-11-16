@@ -20,6 +20,7 @@ body {
   box-sizing: border-box;
   font-family: "TT Lakes";
   font-size: 16px;
+  background-color: #f8f8f8;
 }
 
 .slider {
@@ -157,14 +158,29 @@ body {
 }
 .services_right {
   float: right;
-  display: inline;
+}
+.services_right_buttons {
+  display: flex;
+  justify-content: flex-end;
 }
 .services_labels {
   border: none;
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
+  text-wrap: nowrap;
   margin-right: 16px;
+  margin: 30px 16px 0 0;
+  width: 168px;
+  height: 40;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1c21;
+  cursor: pointer;
+}
+.services_right_img {
+  padding-left: 5px;
 }
 .services_left_main {
   margin: 30px 42px 0 0;
@@ -192,6 +208,10 @@ body {
   overflow-x: auto;
   flex-wrap: nowrap;
   scrollbar-width: none;
+  margin: 0 16px;
+}
+.services_nav_down {
+  margin: 0 16px;
 }
 .services_nav_up_button, .services_down_button_reviews {
   display: flex;
@@ -210,7 +230,7 @@ body {
   cursor: pointer;
   width: auto;
 }
-.services_nav_up_button:hover, .services_down_button_reviews:hover {
+.services_nav_up_button:hover, .services_down_button_reviews:hover, .services_nav_up_button:active, .services_down_button_reviews:active {
   background-color: #ffffff;
   border: #b8ffec 2px solid;
   border-radius: 6px;
@@ -232,7 +252,7 @@ body {
   flex-wrap: wrap;
   margin-left: 24px;
 }
-.services_main_title {
+.services_main_title_one {
   font-family: "TT Lakes";
   font-size: 14px;
   font-weight: 400;
@@ -240,7 +260,10 @@ body {
   line-height: 20px;
   letter-spacing: 0.2px;
 }
-.services_main_title_hiden {
+.services_main_title_onex {
+  margin-top: 14px;
+}
+.services_main_title_hiden, .services_main_title_two {
   display: none;
 }
 .services_main_button_visible {
@@ -282,6 +305,7 @@ body {
 .repair_brands_container, .repair_types_main {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1320px;
 }
 .repair_brands_container_hidden, .repair_types_main_hidden {
   display: none;
@@ -298,6 +322,7 @@ body {
   height: 40px;
   width: 208px;
   padding: 16px;
+  cursor: pointer;
 }
 .repair_types_main_parth {
   display: flex;
@@ -310,6 +335,7 @@ body {
   height: 128px;
   width: 208px;
   padding: 16px;
+  cursor: pointer;
 }
 .repair_brands_container_parth_hidden {
   display: flex;
@@ -343,6 +369,8 @@ body {
 }
 .repair_brands_buttons, .repair_types_buttons {
   padding-bottom: 30px;
+  cursor: pointer;
+  width: 200px;
 }
 .repair_brands_button, .repair_types_button {
   font-family: "TT Lakes";
@@ -378,10 +406,15 @@ body {
 }
 .prices_main {
   margin: 0 24px 24px 24px;
+  font-size: 14px;
 }
 .prices_main_up {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.prices_main_up_path {
+  color: #7e7e82;
+  padding: 10px;
 }
 .prices_main_about {
   background-color: #ffffff;
@@ -409,6 +442,7 @@ body {
   letter-spacing: -0.15px;
   height: 32px;
   width: 119px;
+  cursor: pointer;
 }
 
 .commercial {
@@ -421,7 +455,6 @@ body {
   width: 421px;
   height: 60px;
   margin: 16px 24px;
-  padding-top: 24px;
 }
 .commercial_button {
   font-family: "TT Lakes";
@@ -437,6 +470,7 @@ body {
   /* margin-bottom: 50px; */
   margin-left: 24px;
   padding-bottom: 47px;
+  cursor: pointer;
 }
 
 .buttoms {
@@ -470,6 +504,61 @@ body {
   max-width: 330px;
   min-height: 32px;
   font-size: 14px;
+}
+.buttoms_right_divz {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .services_nav_down {
+    display: none;
+  }
+  .services_right {
+    display: none;
+  }
+  .services_nav_up_button_hidden {
+    display: none;
+  }
+  .services_main_img {
+    width: 306px;
+    height: 208px;
+  }
+  .services_main_title_one {
+    display: none;
+  }
+  .services_main_title_two {
+    display: flex;
+    flex-direction: column;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+    color: #1b1c21;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .services_main_title_twox {
+    display: flex;
+    margin-top: 14px;
+  }
+  .repair_types_main_parth_hidden, .repair_brands_container_parth_hidden {
+    display: none;
+  }
+  .repair_brands_container_parth {
+    width: 192px;
+  }
+  .repair_types_main_parth {
+    width: 192px;
+  }
+  .buttoms_right_div {
+    display: none;
+  }
+  .buttoms_right_divz {
+    display: flex;
+    align-items: flex-end;
+    width: 213px;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
