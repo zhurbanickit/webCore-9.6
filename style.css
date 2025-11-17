@@ -326,7 +326,6 @@ body {
 }
 .repair_types_main_parth {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background: #ffffff;
   border: #eaeaea 1px solid;
@@ -336,6 +335,11 @@ body {
   width: 208px;
   padding: 16px;
   cursor: pointer;
+}
+.repair_types_main_arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 .repair_brands_container_parth_hidden {
   display: flex;
@@ -510,6 +514,52 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
+  .nav_menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  .nav_menu_left {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_menu_left_burger {
+    display: inline;
+    justify-self: flex-start;
+  }
+  .nav_menu_right {
+    float: right;
+    display: inline;
+  }
+  .nav_menu_right_button {
+    border: none;
+    background: #ffffff;
+    margin: 24px 8px;
+  }
+  .nav_menu_right_border {
+    border-left: 2px solid #eaeaea;
+    border-right: none;
+    padding-left: 20px;
+  }
+  .nav_menu_left_cps {
+    border: none;
+    background: #ffffff;
+    margin: 18.5px 16px;
+    padding: 0;
+  }
+  .nav_menu_left_burger {
+    display: flex;
+    justify-content: flex-start;
+    border-right: 2px solid #eaeaea;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 0 0;
+    background: #ffffff;
+    padding: 0 24px 0 24px;
+  }
   .services_nav_down {
     display: none;
   }
@@ -554,6 +604,7 @@ body {
   }
   .buttoms_right_divz {
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
     width: 213px;
     font-size: 14px;
