@@ -797,6 +797,7 @@ display: none;
 }
 
 .services{
+  border-top: 1px variables.$titlesborder-color solid;
   &_right{
     display: none;
   }
@@ -827,15 +828,60 @@ display: none;
   margin-left: 0;
   margin-right: 0;
 }
+
+&_main_button_visible{
+  margin: 16px 0;
+}
 // &_main_about{
 //   margin-left: 0;
 // }
 }
 
+.repair{
+  &_brands_container{
+    display: flex;
+    flex-direction: row;
+    overflow:scroll;
+flex-wrap: nowrap;
+  }
+
+&_brands_container_parth{
+
+}
+
+
+  &_types_main{
+    display: flex;
+    flex-direction: row;
+    overflow:scroll;
+flex-wrap: nowrap;
+  }
+  
+&_types_main_parth{
+
+    width: 208px;
+}
+}
 
 
 
-
+.commercial{
+  &_proposal{
+    width: auto;
+    height: auto;
+  }
+  &_button{
+    // width: 192px;
+    // // height: 55px;
+    justify-content: flex-start;
+  }
+//   &_imge{
+// padding: 0;
+// margin: 0;
+// display: flex;
+// justify-content: flex-start;
+//   }
+}
 
   .buttoms{
     display: flex;

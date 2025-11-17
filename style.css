@@ -633,6 +633,9 @@ body {
   .nav_menu_right_border {
     padding: 10;
   }
+  .services {
+    border-top: 1px #d9fff5 solid;
+  }
   .services_right {
     display: none;
   }
@@ -662,6 +665,31 @@ body {
     border-radius: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+  .services_main_button_visible {
+    margin: 16px 0;
+  }
+  .repair_brands_container {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+  .repair_types_main {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+  .repair_types_main_parth {
+    width: 208px;
+  }
+  .commercial_proposal {
+    width: auto;
+    height: auto;
+  }
+  .commercial_button {
+    justify-content: flex-start;
   }
   .buttoms {
     display: flex;
