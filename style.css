@@ -195,6 +195,7 @@ body {
 }
 .services_amenities {
   display: flex;
+  justify-content: space-between;
 }
 .services_left {
   float: left;
@@ -455,6 +456,22 @@ body {
   margin: 0 24px 24px 24px;
   font-size: 14px;
 }
+.prices_hidden {
+  display: none;
+}
+.prices_hidden_path {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 200px;
+  width: 208px;
+  padding: 16px;
+  cursor: pointer;
+}
 .prices_main_up {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -683,6 +700,19 @@ body {
   }
   .repair_types_main_parth {
     width: 208px;
+  }
+  .prices_hidden {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+  .prices_main {
+    display: none;
+  }
+  .prices_hidden_path {
+    width: 260px;
+    height: 200px;
   }
   .commercial_proposal {
     width: auto;

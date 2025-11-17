@@ -229,6 +229,7 @@ font-family: "TT Lakes";
 
  &_amenities {
   display: flex;
+  justify-content: space-between;
 }
 
 &_left{
@@ -576,7 +577,22 @@ font-family: 'TT Lakes';
   margin:0 24px 24px 24px;
   font-size: 14px;
 }
-
+&_hidden{
+  display: none;
+}
+&_hidden_path{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: none;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 200px;
+    width: 208px;
+    padding: 16px;
+    cursor: pointer;
+}
 
   &_main_up{
     display: grid;
@@ -845,9 +861,9 @@ display: none;
 flex-wrap: nowrap;
   }
 
-&_brands_container_parth{
+// &_brands_container_parth{
 
-}
+// }
 
 
   &_types_main{
@@ -863,7 +879,25 @@ flex-wrap: nowrap;
 }
 }
 
+.prices{
 
+  &_hidden{
+   display: flex;
+    flex-direction: row;
+    overflow:scroll;
+flex-wrap: nowrap;
+}
+
+&_main{
+  display: none;
+}
+
+&_hidden_path{
+  width: 260px;
+  height: 200px;
+}
+
+}
 
 .commercial{
   &_proposal{
