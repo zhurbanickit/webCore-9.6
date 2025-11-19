@@ -353,7 +353,19 @@ body {
 }
 .repair_brands_container_hidden, .repair_types_main_hidden {
   display: none;
-  flex-wrap: wrap;
+}
+.repair_brands_container_parth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: #eaeaea 1px solid;
+  border-radius: 5px;
+  margin: 0 0 16px 24px;
+  height: 40px;
+  width: 208px;
+  padding: 16px;
+  cursor: pointer;
 }
 .repair_brands_hidden_red {
   display: none;
@@ -368,7 +380,7 @@ body {
   padding: 16px;
   cursor: pointer;
 }
-.repair_brands_container_parth {
+.repair_brands_container_parth_hidden {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -379,7 +391,6 @@ body {
   height: 40px;
   width: 208px;
   padding: 16px;
-  cursor: pointer;
 }
 .repair_types_main_parth {
   display: flex;
@@ -410,18 +421,6 @@ body {
   justify-content: flex-end;
   align-items: end;
 }
-.repair_brands_container_parth_hidden {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  border: #eaeaea 1px solid;
-  border-radius: 5px;
-  margin: 0 0 16px 24px;
-  height: 40px;
-  width: 208px;
-  padding: 16px;
-}
 .repair_types_main_parth_hidden {
   display: flex;
   align-items: center;
@@ -434,10 +433,10 @@ body {
   width: 208px;
   padding: 16px;
 }
-.repair_brands_swiper_pagination-active, .repair_types_swiper_pagination-active {
+.repair_brands_swiper_pagination-bullet-active, .repair_types_swiper_pagination-bullet-active {
   background: #b5b6bc;
 }
-.repair_brands_swiper_pagination, .repair_types_swiper_pagination {
+.repair_brands_swiper_pagination-bullet, .repair_types_swiper_pagination-bullet {
   background: #dddddd;
 }
 .repair_brands_buttons, .repair_types_buttons {
@@ -712,10 +711,19 @@ body {
     margin: 16px 0;
   }
   .repair_brands_container {
-    display: flex;
+    display: none;
     flex-direction: row;
     overflow: scroll;
     flex-wrap: nowrap;
+  }
+  .repair_brands_swipper {
+    display: flex;
+    width: 100%;
+  }
+  .repair_brands_container_hidden {
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: auto;
   }
   .repair_types_main {
     display: flex;

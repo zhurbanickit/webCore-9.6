@@ -41,3 +41,13 @@ document.querySelector(".repair_types_button_hidden").onclick = function () {
   document.querySelector(".repair_types_button_hidden").style.display = "none" ;
   document.querySelector(".repair_types_hidden_green").style.display = "none" ;
 }
+
+const swiper = new Swiper(".repair_brands_swipper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  pagination: {
+    el: ".repair_brands_swiper_pagination",
+  },
+});

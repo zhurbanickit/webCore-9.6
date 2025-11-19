@@ -444,22 +444,12 @@ border-radius: 6px;
 &_types_main_hidden
 {
  display: none;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
-&_brands_hidden_red{
-  display: none;
-  align-items: center;
-    justify-content: space-between;
-    background: variables.$gradientgrid-color;
-    border: variables.$bordericongrid-color 1px solid;
-    border-radius: 5px;
-    margin:0 0 16px 24px ;
-    height: 40px;
-    width: 208px;
-    padding: 16px;
-    cursor: pointer;
-}
+
+
+
 
   &_brands_container_parth
   {
@@ -476,6 +466,33 @@ border-radius: 6px;
     cursor: pointer;
   }
 
+  &_brands_hidden_red{
+  display: none;
+  align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+&_brands_container_parth_hidden
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+  }
 
 
 &_types_main_parth {
@@ -513,19 +530,7 @@ border-radius: 6px;
   align-items: end;
 }
 
-  &_brands_container_parth_hidden
-  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: variables.$gradientgrid-color;
-    border: variables.$bordericongrid-color 1px solid;
-    border-radius: 5px;
-    margin:0 0 16px 24px ;
-    height: 40px;
-    width: 208px;
-    padding: 16px;
-  }
+  
 
   &_types_main_parth_hidden {
      display: flex;
@@ -540,14 +545,14 @@ border-radius: 6px;
     padding: 16px;
   }
 
-  &_brands_swiper_pagination-active,
-  &_types_swiper_pagination-active
+  &_brands_swiper_pagination-bullet-active,
+  &_types_swiper_pagination-bullet-active
    {
     background: variables.$twopagination-color;
   }
 
-  &_brands_swiper_pagination,
-  &_types_swiper_pagination 
+  &_brands_swiper_pagination-bullet,
+  &_types_swiper_pagination-bullet 
   {
     background: variables.$pagination-color;
 }
@@ -887,11 +892,24 @@ display: none;
 
 .repair{
   &_brands_container{
-    display: flex;
+    display: none;
     flex-direction: row;
     overflow:scroll;
 flex-wrap: nowrap;
   }
+
+&_brands_swipper{
+ display: flex;
+    width: 100%;
+    // padding-bottom: 50px;
+}
+
+&_brands_container_hidden{
+  display: flex;
+// flex-wrap: wrap;
+overflow:scroll;
+scrollbar-width: auto;
+}
 
 // &_brands_container_parth{
 
