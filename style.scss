@@ -899,16 +899,38 @@ flex-wrap: nowrap;
   }
 
 &_brands_swipper{
- display: flex;
+//  display: flex;
     width: 100%;
     // padding-bottom: 50px;
 }
 
 &_brands_container_hidden{
   display: flex;
+  justify-content: center;
+  align-items: center ;
 // flex-wrap: wrap;
-overflow:scroll;
-scrollbar-width: auto;
+// overflow:scroll;
+// scrollbar-width: auto;
+}
+
+&repair_brands_container_parth_hidden{
+  display: flex;
+  // justify-content: center;
+  align-items: center ;
+  justify-content: center;
+    background: variables.$gradientgrid-color;
+    border: variables.$bordericongrid-color 1px solid;
+    border-radius: 5px;
+    margin:0 0 16px 24px ;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+}
+
+
+
+&_brands_button{
+  display: none;
 }
 
 // &_brands_container_parth{

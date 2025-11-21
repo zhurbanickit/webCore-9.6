@@ -717,13 +717,27 @@ body {
     flex-wrap: nowrap;
   }
   .repair_brands_swipper {
-    display: flex;
     width: 100%;
   }
   .repair_brands_container_hidden {
     display: flex;
-    overflow: scroll;
-    scrollbar-width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .repairrepair_brands_container_parth_hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: #eaeaea 1px solid;
+    border-radius: 5px;
+    margin: 0 0 16px 24px;
+    height: 40px;
+    width: 208px;
+    padding: 16px;
+  }
+  .repair_brands_button {
+    display: none;
   }
   .repair_types_main {
     display: flex;
