@@ -27,6 +27,7 @@ body {
   display: none;
   width: 320px;
   box-shadow: 10px 0px 35px 0px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
 }
 .slider_nav {
   display: flex;
@@ -597,7 +598,80 @@ body {
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: 851px) and (max-width: 2120px) {
+  .page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .slider {
+    display: block;
+    position: fixed;
+    height: 100%;
+    box-shadow: none;
+  }
+  .services {
+    margin-left: 320px;
+  }
+  .services_nav_down {
+    display: flex;
+  }
+  .services_right {
+    display: none;
+  }
+  .services_nav_up_button_hidden {
+    display: none;
+  }
+  .services_main_img {
+    width: 306px;
+    height: 208px;
+  }
+  .services_main_title_one {
+    display: none;
+  }
+  .services_main_title_two {
+    display: flex;
+    flex-direction: column;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+    color: #1b1c21;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .services_main_title_twox {
+    display: flex;
+    margin-top: 14px;
+  }
+  .repair {
+    margin-left: 320px;
+  }
+  .repair_types_main_parth_hidden, .repair_brands_container_parth_hidden {
+    display: none;
+  }
+  .repair_brands_container_parth {
+    width: 192px;
+  }
+  .repair_types_main_parth {
+    width: 192px;
+  }
+  .commercial,
+  .prices {
+    margin-left: 320px;
+  }
+  .buttoms_right_div {
+    display: none;
+  }
+  .buttoms_right_divz {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 213px;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 549px) and (max-width: 850px) {
   .nav_menu {
     display: flex;
   }
@@ -652,7 +726,7 @@ body {
     letter-spacing: 0;
   }
 }
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 50px) and (max-width: 548px) {
   .nav_menu {
     display: flex;
     padding: 16px;
@@ -724,7 +798,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .repairrepair_brands_container_parth_hidden {
+  .repair_brands_container_parth_hidden {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -748,7 +822,16 @@ body {
   .repair_types_main_parth {
     width: 208px;
   }
+  .repair_types_buttons {
+    display: none;
+  }
   .prices_hidden {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+  .prices_hidden_wrapper {
     display: flex;
     flex-direction: row;
     overflow: scroll;
