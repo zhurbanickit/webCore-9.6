@@ -610,6 +610,9 @@ body {
     height: 100%;
     box-shadow: none;
   }
+  .slider .exit {
+    display: none;
+  }
   .services {
     margin-left: 320px;
   }

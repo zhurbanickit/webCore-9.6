@@ -16,7 +16,9 @@ document.querySelector('.pair_button').onclick = function () {
   console.log('click pair_button')
   document.querySelector('.repair_brands_button_hidden').style.display = 'flex'
   document.querySelector('.pair_button').style.display = 'none'
-  document.querySelector('.repair_brands_hidden_red').style.display = 'flex'
+  document
+    .querySelectorAll('.repair_brands_hidden_red')
+    .forEach((el) => (el.style.display = 'flex'))
 }
 
 document.querySelector('.repair_brands_button_hidden').onclick = function () {
@@ -40,14 +42,29 @@ document.querySelector('.repair_types_button_hidden').onclick = function () {
   document.querySelector('.repair_types_hidden_green').style.display = 'none'
 }
 
-// const swiper = new Swiper('.repair_brands_swipper', {
-//   direction: 'horizontal',
-//   loop: true,
+document.querySelector('.nav_menu_left_burger').onclick = function () {
+  console.log('click .nav_menu_left_burger')
+  document.querySelector('.slider').style.display = 'block'
+  document.querySelector('.slider').style.position = 'fixed'
+  document.querySelector('.slider').style.height = '100%'
+  // document.querySelector('.slider').style.z-index = '1'
+}
 
-//   pagination: {
-//     el: '.repair_brands_swiper_pagination'
-//   },
-// })
+document.querySelector('.slider_left_button').onclick = function () {
+  console.log('click .slider_left_button')
+  document.querySelector('.slider').style.display = 'none'
+}
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination'
+  }
+})
+
+console.log(swiper)
 
 // const swiper = new swiper('.types_swipper', {
 //   direction: 'horizontal',
