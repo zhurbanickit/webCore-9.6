@@ -28,6 +28,7 @@ body {
   width: 320px;
   box-shadow: 10px 0px 35px 0px rgba(0, 0, 0, 0.2);
   background: #ffffff;
+  z-index: 2;
 }
 .slider_nav {
   display: flex;
@@ -434,10 +435,12 @@ body {
   width: 208px;
   padding: 16px;
 }
-.repair_brands_swiper_pagination-bullet-active, .repair_types_swiper_pagination-bullet-active {
+.repair .swiper-pagination-bullet-active,
+.repair .swiper-pagination-bullet-active {
   background: #b5b6bc;
 }
-.repair_brands_swiper_pagination-bullet, .repair_types_swiper_pagination-bullet {
+.repair .swiper-pagination-bullet,
+.repair .swiper-pagination-bullet {
   background: #dddddd;
 }
 .repair_brands_buttons, .repair_types_buttons {
@@ -491,11 +494,12 @@ body {
   background: #ffffff;
   border: none;
   border-radius: 5px;
-  margin: 0 0 16px 24px;
+  margin: 0 0 40px 24px;
   height: 200px;
   width: 208px;
   padding: 16px;
   cursor: pointer;
+  flex-shrink: initial;
 }
 .prices_main_up {
   display: grid;
@@ -674,7 +678,7 @@ body {
     letter-spacing: 0;
   }
 }
-@media (min-width: 549px) and (max-width: 850px) {
+@media (min-width: 597px) and (max-width: 850px) {
   .nav_menu {
     display: flex;
   }
@@ -724,18 +728,27 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    text-align: right;
     width: 213px;
     font-size: 14px;
     letter-spacing: 0;
   }
 }
-@media (min-width: 50px) and (max-width: 548px) {
+@media (min-width: 50px) and (max-width: 596px) {
   .nav_menu {
     display: flex;
     padding: 16px;
   }
+  .nav_menu_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .nav_menu_right_button {
-    margin: 0;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0 0 2px;
   }
   .nav_menu_right_button_hidden {
     display: none;
@@ -747,9 +760,7 @@ body {
   .nav_menu_left_burger {
     border: none;
     padding: 0;
-  }
-  .nav_menu_right_border {
-    padding: 10;
+    margin-right: 6px;
   }
   .services {
     border-top: 1px #d9fff5 solid;
@@ -808,16 +819,17 @@ body {
     background: #ffffff;
     border: #eaeaea 1px solid;
     border-radius: 5px;
-    margin: 0 0 16px 24px;
+    margin: 0 0 40px 24px;
     height: 40px;
     width: 208px;
     padding: 16px;
+    flex-shrink: initial;
   }
   .repair_brands_button {
     display: none;
   }
   .repair_types_main {
-    display: flex;
+    display: none;
     flex-direction: row;
     overflow: scroll;
     flex-wrap: nowrap;
@@ -828,17 +840,39 @@ body {
   .repair_types_buttons {
     display: none;
   }
+  .repair_types_main_hidden {
+    display: flex;
+  }
+  .repair_types_swipper_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .repair_types_swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border: #eaeaea 1px solid;
+    border-radius: 5px;
+    margin: 0 0 40px 24px;
+    height: 128px;
+    width: 208px;
+    padding: 16px;
+    cursor: pointer;
+    flex-shrink: initial;
+  }
+  .repair_types_main_arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
   .prices_hidden {
     display: flex;
-    flex-direction: row;
-    overflow: scroll;
-    flex-wrap: nowrap;
   }
   .prices_hidden_wrapper {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
-    flex-wrap: nowrap;
   }
   .prices_main {
     display: none;
@@ -846,6 +880,12 @@ body {
   .prices_hidden_path {
     width: 260px;
     height: 200px;
+  }
+  .prices .swiper-pagination-bullet-active {
+    background: #b5b6bc;
+  }
+  .prices .swiper-pagination-bullet {
+    background: #dddddd;
   }
   .commercial_proposal {
     width: auto;
@@ -882,7 +922,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-top: 10px;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
   }
   .buttoms_right_div {
     display: none;

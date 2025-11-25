@@ -55,23 +55,23 @@ document.querySelector('.slider_left_button').onclick = function () {
   document.querySelector('.slider').style.display = 'none'
 }
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination'
-  }
-})
-
-console.log(swiper)
-
-// const swiper = new swiper('.types_swipper', {
+// const swiper = new Swiper('.swiper', {
 //   direction: 'horizontal',
 //   loop: true,
 
 //   pagination: {
-//     el: '.repair_types_swiper_pagination'
+//     el: '.swiper-pagination'
+//   }
+// })
+
+// console.log(swiper)
+
+// const swiper1 = new Swiper('.swiper1', {
+//   direction: 'horizontal',
+//   loop: true,
+
+//   pagination: {
+//     el: '.swiper-pagination-1'
 //   }
 // })
 
@@ -83,3 +83,20 @@ console.log(swiper)
 //     el: '.prices_main_pagination'
 //   }
 // })
+
+document.querySelectorAll('[data-swiper]').forEach((swiperElement) => {
+  const swiperId = swiperElement.getAttribute('data-swiper')
+  const paginationEl = swiperElement.querySelector(
+    `[data-pagination="${swiperId}"]`
+  )
+
+  new Swiper(swiperElement, {
+    loop: 'true',
+
+    pagination: {
+      el: paginationEl,
+      clickable: true
+    }
+    // другие настройки...
+  })
+})
