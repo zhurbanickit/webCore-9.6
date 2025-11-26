@@ -329,6 +329,18 @@ body {
 }
 .services_main_button_hidden {
   display: none;
+  font-family: "TT Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #1b1c21;
+  background: #f8f8f8;
+  border: none;
+  /* margin-bottom: 50px; */
+  padding: 0;
+  cursor: pointer;
 }
 .services_main_poster {
   display: flex;
@@ -489,8 +501,9 @@ body {
 }
 .prices_hidden_path {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
   background: #ffffff;
   border: none;
   border-radius: 5px;
@@ -499,7 +512,29 @@ body {
   width: 208px;
   padding: 16px;
   cursor: pointer;
-  flex-shrink: initial;
+}
+.prices_hidden_up {
+  color: #7e7e82;
+}
+.prices_hidden_slide {
+  color: #1b1c21;
+}
+.prices_hidden_button {
+  border: none;
+  background-color: #ff3e79;
+  color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "TT Lakes";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  height: 32px;
+  width: 119px;
+  cursor: pointer;
 }
 .prices_main_up {
   display: grid;
@@ -653,14 +688,8 @@ body {
   .repair {
     margin-left: 320px;
   }
-  .repair_types_main_parth_hidden, .repair_brands_container_parth_hidden {
+  .repair_brands_container_parth_hidden {
     display: none;
-  }
-  .repair_brands_container_parth {
-    width: 192px;
-  }
-  .repair_types_main_parth {
-    width: 192px;
   }
   .commercial,
   .prices {
@@ -715,7 +744,7 @@ body {
   .repair_types_main_parth_hidden, .repair_brands_container_parth_hidden {
     display: none;
   }
-  .repair_brands_container_parth {
+  .repair_brands_container_parth, .repair_brands_hidden_red, .repair_types_hidden_green {
     width: 192px;
   }
   .repair_types_main_parth {
@@ -809,7 +838,7 @@ body {
   }
   .repair_brands_container_hidden {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .repair_brands_container_parth_hidden {
@@ -846,11 +875,10 @@ body {
   .repair_types_swipper_wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .repair_types_swiper-slide {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background: #ffffff;
     border: #eaeaea 1px solid;
@@ -872,7 +900,7 @@ body {
   }
   .prices_hidden_wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
   }
   .prices_main {
     display: none;
