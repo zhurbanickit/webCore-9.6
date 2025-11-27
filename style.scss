@@ -516,7 +516,7 @@ body {
 
   &_types_main_parth_hidden {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     background: variables.$gradientgrid-color;
     border: variables.$bordericongrid-color 1px solid;
@@ -606,21 +606,26 @@ body {
     width: 208px;
     padding: 16px;
     cursor: pointer;
-    // flex-shrink: initial;
+    flex-shrink: initial;
   }
 
   &_hidden_up {
     color: variables.$anothertext-color;
+    font-size: 14px;
+    margin-bottom: 16px;
   }
 
   // &_hidden_double {
-  //   display: flex;
-  //   flex-direction: row;
+  //   display: inline-block;
+  //   // flex-direction: row;
   //   justify-content: space-around;
+  //   width: 100%;
   // }
 
   &_hidden_slide {
     color: variables.$maintext-color;
+
+    font-size: 14px;
   }
 
   &_hidden_button {
@@ -630,7 +635,7 @@ body {
     border-radius: 15px;
     // text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     // padding: 6px;
     font-family: 'TT Lakes';
@@ -641,6 +646,7 @@ body {
     height: 32px;
     width: 119px;
     cursor: pointer;
+    margin-left: 109px;
   }
 
   &_main_up {
@@ -1058,6 +1064,9 @@ body {
       padding: 16px;
       flex-shrink: initial;
     }
+    &_brands_img {
+      margin-left: 58px;
+    }
 
     &_brands_button {
       display: none;
@@ -1074,9 +1083,9 @@ body {
       flex-wrap: nowrap;
     }
 
-    &_types_main_parth {
-      width: 208px;
-    }
+    // &_types_main_parth {
+    //   width: 208px;
+    // }
 
     &_types_buttons {
       display: none;
@@ -1092,6 +1101,7 @@ body {
       align-items: center;
       justify-content: flex-start;
     }
+
     &_types_swiper-slide {
       display: flex;
       // align-items: center;
@@ -1106,10 +1116,20 @@ body {
       cursor: pointer;
       flex-shrink: initial;
     }
+
+    &_types_main_left {
+      width: 146px;
+    }
+
+    &_types_swiper-img {
+      margin-left: 20px;
+    }
+
     &_types_main_arrow {
       display: flex;
       justify-content: flex-end;
       align-items: end;
+      // margin-left: 90px;
     }
   }
 
@@ -1133,7 +1153,7 @@ body {
     }
 
     &_hidden_path {
-      width: 260px;
+      // width: 260px;
       height: 200px;
     }
 

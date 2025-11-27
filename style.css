@@ -437,7 +437,6 @@ body {
 }
 .repair_types_main_parth_hidden {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background: #ffffff;
   border: #eaeaea 1px solid;
@@ -512,12 +511,16 @@ body {
   width: 208px;
   padding: 16px;
   cursor: pointer;
+  flex-shrink: initial;
 }
 .prices_hidden_up {
   color: #7e7e82;
+  font-size: 14px;
+  margin-bottom: 16px;
 }
 .prices_hidden_slide {
   color: #1b1c21;
+  font-size: 14px;
 }
 .prices_hidden_button {
   border: none;
@@ -525,7 +528,7 @@ body {
   color: #ffffff;
   border-radius: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: "TT Lakes";
   font-size: 12px;
@@ -535,6 +538,7 @@ body {
   height: 32px;
   width: 119px;
   cursor: pointer;
+  margin-left: 109px;
 }
 .prices_main_up {
   display: grid;
@@ -854,6 +858,9 @@ body {
     padding: 16px;
     flex-shrink: initial;
   }
+  .repair_brands_img {
+    margin-left: 58px;
+  }
   .repair_brands_button {
     display: none;
   }
@@ -862,9 +869,6 @@ body {
     flex-direction: row;
     overflow: scroll;
     flex-wrap: nowrap;
-  }
-  .repair_types_main_parth {
-    width: 208px;
   }
   .repair_types_buttons {
     display: none;
@@ -890,6 +894,12 @@ body {
     cursor: pointer;
     flex-shrink: initial;
   }
+  .repair_types_main_left {
+    width: 146px;
+  }
+  .repair_types_swiper-img {
+    margin-left: 20px;
+  }
   .repair_types_main_arrow {
     display: flex;
     justify-content: flex-end;
@@ -906,7 +916,6 @@ body {
     display: none;
   }
   .prices_hidden_path {
-    width: 260px;
     height: 200px;
   }
   .prices .swiper-pagination-bullet-active {
