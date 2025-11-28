@@ -601,7 +601,7 @@ body {
     background: variables.$gradientgrid-color;
     border: none;
     border-radius: 5px;
-    margin: 0 0 40px 24px;
+    margin: 16px 0 40px 16px;
     height: 200px;
     width: 208px;
     padding: 16px;
@@ -626,6 +626,7 @@ body {
     color: variables.$maintext-color;
 
     font-size: 14px;
+    min-width: 81px;
   }
 
   &_hidden_button {
@@ -646,7 +647,7 @@ body {
     height: 32px;
     width: 119px;
     cursor: pointer;
-    margin-left: 109px;
+    margin-left: 28px;
   }
 
   &_main_up {
@@ -1058,7 +1059,7 @@ body {
       background: variables.$gradientgrid-color;
       border: variables.$bordericongrid-color 1px solid;
       border-radius: 5px;
-      margin: 0 0 40px 24px;
+      margin: 24px 0 40px 24px;
       height: 40px;
       width: 208px;
       padding: 16px;
@@ -1109,7 +1110,7 @@ body {
       background: variables.$gradientgrid-color;
       border: variables.$bordericongrid-color 1px solid;
       border-radius: 5px;
-      margin: 0 0 40px 24px;
+      margin: 24px 0 40px 24px;
       height: 128px;
       width: 208px;
       padding: 16px;
@@ -1155,6 +1156,12 @@ body {
     &_hidden_path {
       // width: 260px;
       height: 200px;
+    }
+
+    &_hidden_div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     .swiper-pagination-bullet-active {
@@ -1217,6 +1224,7 @@ body {
       justify-content: center;
       text-align: center;
       margin-top: 10px;
+      margin-bottom: 20px;
       font-family: 'TT Lakes';
       font-size: 14px;
       font-weight: 500;

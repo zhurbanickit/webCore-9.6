@@ -506,7 +506,7 @@ body {
   background: #ffffff;
   border: none;
   border-radius: 5px;
-  margin: 0 0 40px 24px;
+  margin: 16px 0 40px 16px;
   height: 200px;
   width: 208px;
   padding: 16px;
@@ -521,6 +521,7 @@ body {
 .prices_hidden_slide {
   color: #1b1c21;
   font-size: 14px;
+  min-width: 81px;
 }
 .prices_hidden_button {
   border: none;
@@ -538,7 +539,7 @@ body {
   height: 32px;
   width: 119px;
   cursor: pointer;
-  margin-left: 109px;
+  margin-left: 28px;
 }
 .prices_main_up {
   display: grid;
@@ -852,7 +853,7 @@ body {
     background: #ffffff;
     border: #eaeaea 1px solid;
     border-radius: 5px;
-    margin: 0 0 40px 24px;
+    margin: 24px 0 40px 24px;
     height: 40px;
     width: 208px;
     padding: 16px;
@@ -887,7 +888,7 @@ body {
     background: #ffffff;
     border: #eaeaea 1px solid;
     border-radius: 5px;
-    margin: 0 0 40px 24px;
+    margin: 24px 0 40px 24px;
     height: 128px;
     width: 208px;
     padding: 16px;
@@ -917,6 +918,11 @@ body {
   }
   .prices_hidden_path {
     height: 200px;
+  }
+  .prices_hidden_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .prices .swiper-pagination-bullet-active {
     background: #b5b6bc;
@@ -961,6 +967,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 20px;
     font-family: "TT Lakes";
     font-size: 14px;
     font-weight: 500;
