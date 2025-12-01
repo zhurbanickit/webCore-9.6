@@ -113,12 +113,15 @@ document.querySelectorAll('[data-swiper]').forEach((swiperElement) => {
   )
 
   new Swiper(swiperElement, {
-    loop: 'true',
+    loop: true,
 
     pagination: {
       el: paginationEl,
       clickable: true
-    }
+    },
+    centeredSlides: true,
+
+    slideClass: `swiper-slide-${swiperId}`
     // другие настройки...
   })
 })

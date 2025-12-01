@@ -579,6 +579,7 @@ body {
 }
 .prices_about {
   border-bottom: 2px #eaeaea solid;
+  text-align: center;
 }
 .prices_button {
   border: none;
@@ -725,10 +726,10 @@ body {
     margin-left: 320px;
   }
   .buttoms_right_div {
-    display: none;
+    display: flex;
   }
   .buttoms_right_divz {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: flex-end;
     width: 213px;

@@ -693,6 +693,7 @@ body {
   &_about {
     border-bottom: 2px variables.$bordericongrid-color solid;
     // border-top: 5px variables.$gradientgrid-color solid;
+    text-align: center;
   }
 
   &_button {
@@ -870,10 +871,10 @@ body {
 
   .buttoms {
     &_right_div {
-      display: none;
+      display: flex;
     }
     &_right_divz {
-      display: flex;
+      display: none;
       justify-content: flex-end;
       align-items: flex-end;
       width: 213px;
