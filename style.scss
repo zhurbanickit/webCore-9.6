@@ -67,7 +67,8 @@ body {
     border-top: none;
     border-right: none;
     border-bottom: none;
-    color: variables.$anothertext-color;
+    // color: variables.$anothertext-color;
+    color: variables.$maintext-color;
     background: variables.$gradientgrid_color;
   }
   &_buttom {
@@ -142,10 +143,20 @@ body {
   &_buttom_last_phone:hover {
     cursor: pointer;
 
-    text-decoration: underline #ff3e79;
-
+    // text-decoration: underline #ff3e79;
+    color: variables.$anothertext-color;
     transform: scale(1.1);
   }
+
+  &_services_div:first-child {
+    color: variables.$anothertext-color;
+    border-left: 4px solid variables.$servicesborder-color;
+  }
+  &_services_div:active {
+    color: variables.$anothertext-color;
+    border-left: 4px solid variables.$servicesborder-color;
+  }
+
   &_buttom_last_button {
     font-family: 'TT Lakes';
     font-style: normal;
@@ -168,6 +179,9 @@ body {
   justify-content: space-between;
   background-color: variables.$gradientgrid-color;
   //  margin: 24px;
+  button {
+    cursor: pointer;
+  }
   &_left {
     float: left;
     display: flex;
@@ -366,7 +380,15 @@ body {
     margin-top: 14px;
   }
 
-  &_main_title_hiden,
+  &_main_title_hiden {
+    display: none;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-weight: 400;
+    color: variables.$maintext-color;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
   &_main_title_two {
     display: none;
   }
@@ -691,6 +713,7 @@ body {
     height: 32px;
     width: 119px;
     cursor: pointer;
+    margin-top: 3px;
   }
 }
 
@@ -791,8 +814,13 @@ body {
     &_nav_down {
       display: flex;
     }
+
+    &_left_main {
+      margin: 30px 0 0 0;
+    }
+
     &_right {
-      display: none;
+      display: flex;
     }
     &_nav_up_button_hidden {
       display: none;
