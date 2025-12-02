@@ -119,7 +119,7 @@ document.querySelectorAll('[data-swiper]').forEach((swiperElement) => {
       el: paginationEl,
       clickable: true
     },
-    centeredSlides: true,
+    // centeredSlides: true,
 
     slideClass: `swiper-slide-${swiperId}`
     // другие настройки...

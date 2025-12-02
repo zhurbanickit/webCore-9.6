@@ -599,6 +599,37 @@ body {
   cursor: pointer;
   margin-top: 3px;
 }
+.prices_tablet {
+  margin: 16px;
+}
+.prices_tablet_div {
+  display: inline-block;
+}
+.prices_tablet_header {
+  color: #7e7e82;
+  background-color: #f8f8f8;
+}
+.prices_tablet_header td {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.prices_tablet_main {
+  border-bottom: 2px #eaeaea solid;
+}
+.prices_tablet_main_bottum {
+  border-bottom: none;
+}
+.prices_tablet_wrapper {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.prices_tablet_wrapper td {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  border-bottom: 2px #eaeaea solid;
+}
 
 .commercial {
   background-color: #f8f8f8;
@@ -723,6 +754,9 @@ body {
   }
   .commercial,
   .prices {
+    margin-left: 320px;
+  }
+  .buttoms {
     margin-left: 320px;
   }
   .buttoms_right_div {
@@ -977,6 +1011,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
   }
   .buttoms_right {
     display: flex;
@@ -985,6 +1020,7 @@ body {
   }
   .buttoms_center {
     margin-top: 10px;
+    font-weight: 500;
   }
   .buttoms_right_divz {
     display: flex;

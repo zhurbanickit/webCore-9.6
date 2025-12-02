@@ -716,6 +716,43 @@ body {
     cursor: pointer;
     margin-top: 3px;
   }
+
+  &_tablet {
+    margin: 16px;
+    // border-radius: 10px;
+    // background-color: variables.$gradientgrid-color;
+
+    &_div {
+      display: inline-block;
+    }
+
+    &_header {
+      color: variables.$anothertext-color;
+      background-color: variables.$background-color;
+      td {
+        text-align: left;
+        margin-bottom: 15px;
+      }
+    }
+    &_main {
+      border-bottom: 2px variables.$bordericongrid-color solid;
+      &_bottum {
+        border-bottom: none;
+      }
+    }
+    &_wrapper {
+      // margin: 16px;
+      border-radius: 10px;
+      background-color: variables.$gradientgrid-color;
+      td {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+        border-bottom: 2px variables.$bordericongrid-color solid;
+      }
+    }
+  }
 }
 
 .commercial {
@@ -870,9 +907,12 @@ body {
   }
 
   .buttoms {
+    margin-left: 320px;
+
     &_right_div {
       display: flex;
     }
+
     &_right_divz {
       display: none;
       justify-content: flex-end;
@@ -1236,6 +1276,7 @@ body {
       align-items: center;
       justify-content: center;
       // margin-bottom: 8px;
+      font-weight: 500;
     }
     &_right {
       display: flex;
@@ -1245,6 +1286,7 @@ body {
 
     &_center {
       margin-top: 10px;
+      font-weight: 500;
     }
 
     &_right_divz {
