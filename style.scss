@@ -609,6 +609,7 @@ body {
   background-color: variables.$background-color;
   font-family: 'TT Lakes';
   &_main {
+    display: none;
     margin: 0 24px 24px 24px;
     font-size: 14px;
   }
@@ -723,7 +724,16 @@ body {
     // background-color: variables.$gradientgrid-color;
 
     &_div {
-      display: inline-block;
+      margin: 11px;
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+
+      &_frst,
+      &_second,
+      &_tree {
+        color: variables.$anothertext-color;
+        font-size: 14px;
+      }
     }
 
     &_header {
@@ -864,14 +874,21 @@ body {
       display: none;
     }
     &_main_img {
-      width: 306px;
-      height: 208px;
+      max-width: 531px;
+      height: 307px;
     }
     &_main_title_one {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      font-weight: 400;
+      color: variables.$maintext-color;
+      line-height: 20px;
+      letter-spacing: 0.2px;
     }
     &_main_title_two {
-      display: flex;
+      display: none;
       flex-direction: column;
       font-family: 'TT Lakes';
       font-size: 14px;
@@ -890,7 +907,7 @@ body {
     margin-left: 320px;
 
     &_brands_container_parth_hidden {
-      display: none;
+      display: flex;
     }
     // &_brands_container_parth {
     //   width: 192px;
@@ -901,9 +918,26 @@ body {
     // }
   }
 
-  .commercial,
+  .commercial {
+    margin-left: 320px;
+  }
+
   .prices {
     margin-left: 320px;
+
+    &_tablet {
+      // width: 100%;
+      max-width: 1056px;
+    }
+
+    &_tablet_wrapper {
+      flex-grow: initial;
+      width: 1056px;
+    }
+
+    &_tablet_div_second {
+      margin-left: 30px;
+    }
   }
 
   .buttoms {
@@ -958,7 +992,7 @@ body {
       display: none;
     }
     &_main_img {
-      width: 306px;
+      width: 360px;
       height: 208px;
     }
     &_main_title_one {
@@ -1239,6 +1273,10 @@ body {
 
     .swiper-pagination-bullet {
       background: variables.$pagination-color;
+    }
+
+    &_tablet {
+      display: none;
     }
   }
 

@@ -512,6 +512,7 @@ body {
   font-family: "TT Lakes";
 }
 .prices_main {
+  display: none;
   margin: 0 24px 24px 24px;
   font-size: 14px;
 }
@@ -603,7 +604,13 @@ body {
   margin: 16px;
 }
 .prices_tablet_div {
-  display: inline-block;
+  margin: 11px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.prices_tablet_div_frst, .prices_tablet_div_second, .prices_tablet_div_tree {
+  color: #7e7e82;
+  font-size: 14px;
 }
 .prices_tablet_header {
   color: #7e7e82;
@@ -726,14 +733,21 @@ body {
     display: none;
   }
   .services_main_img {
-    width: 306px;
-    height: 208px;
+    max-width: 531px;
+    height: 307px;
   }
   .services_main_title_one {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+    color: #1b1c21;
+    line-height: 20px;
+    letter-spacing: 0.2px;
   }
   .services_main_title_two {
-    display: flex;
+    display: none;
     flex-direction: column;
     font-family: "TT Lakes";
     font-size: 14px;
@@ -750,11 +764,23 @@ body {
     margin-left: 320px;
   }
   .repair_brands_container_parth_hidden {
-    display: none;
+    display: flex;
   }
-  .commercial,
+  .commercial {
+    margin-left: 320px;
+  }
   .prices {
     margin-left: 320px;
+  }
+  .prices_tablet {
+    max-width: 1056px;
+  }
+  .prices_tablet_wrapper {
+    flex-grow: initial;
+    width: 1056px;
+  }
+  .prices_tablet_div_second {
+    margin-left: 30px;
   }
   .buttoms {
     margin-left: 320px;
@@ -785,7 +811,7 @@ body {
     display: none;
   }
   .services_main_img {
-    width: 306px;
+    width: 360px;
     height: 208px;
   }
   .services_main_title_one {
@@ -988,6 +1014,9 @@ body {
   }
   .prices .swiper-pagination-bullet {
     background: #dddddd;
+  }
+  .prices_tablet {
+    display: none;
   }
   .commercial_proposal {
     width: auto;
